@@ -1,0 +1,31 @@
+{
+  "name": "api-response-utility",
+  "version": "1.0.0",
+  "description": "Standardized API response utility for Node.js apps",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "api",
+    "response",
+    "utility",
+    "express",
+    "node"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashraf-g/api-response-utility.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ashraf-g/api-response-utility/issues"
+  },
+  "author": "Gulam Ashraf",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
