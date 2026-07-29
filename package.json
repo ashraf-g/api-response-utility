@@ -1,31 +1,67 @@
 {
   "name": "api-response-utility",
-  "version": "1.0.0",
-  "description": "Standardized API response utility for Node.js apps",
+  "version": "1.1.0",
+  "description": "Production-ready standardized API response utility for Node.js/Express: success & error formatters, HTTP status code constants, pagination helper, async error handling, custom error classes, and full TypeScript support.",
   "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json"
+  },
   "directories": {
     "test": "test"
   },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "src",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:types": "tsc --noEmit -p tsconfig.test.json",
+    "pretest": "npm run test:types",
+    "prepublishOnly": "npm test"
   },
   "keywords": [
     "api",
     "response",
     "utility",
     "express",
-    "node"
+    "node",
+    "nodejs",
+    "rest",
+    "http",
+    "status-codes",
+    "error-handling",
+    "pagination",
+    "async-handler",
+    "middleware",
+    "typescript",
+    "json"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ashraf-g/api-response-utility.git"
+    "url": "git+https://github.com/ashraf-g/api-response-utility.git"
   },
   "bugs": {
     "url": "https://github.com/ashraf-g/api-response-utility/issues"
   },
+  "homepage": "https://github.com/ashraf-g/api-response-utility#readme",
   "author": "Gulam Ashraf",
   "license": "MIT",
+  "engines": {
+    "node": ">=12"
+  },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "typescript": "^5.4.0"
   }
 }
